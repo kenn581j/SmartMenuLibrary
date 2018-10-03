@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+/*
 namespace SmartMenuTest
 {
     [TestClass]
@@ -12,3 +12,4 @@ namespace SmartMenuTest
         }
     }
 }
+*/
