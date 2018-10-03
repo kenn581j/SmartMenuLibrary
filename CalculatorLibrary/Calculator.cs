@@ -10,43 +10,73 @@ namespace CalculatorLibrary
     {
         public static double Add(double v1, double v2)
         {
-            throw new NotImplementedException();
+            return v1 + v2;
 
         }
 
-        public static object Subtract(double v1, double v2)
+        public static double Subtract(double v1, double v2)
         {
-            throw new NotImplementedException();
+            return v1 - v2;
         }
 
-        public static object Multiply(double v1, double v2)
+        public static double Multiply(double v1, double v2)
         {
-            throw new NotImplementedException();
+            return v1 * v2;
         }
 
         public static double Divide(double v1, double v2)
         {
-            throw new NotImplementedException();
+            return v1 / v2;
         }
 
-        public static int Sum(double[] numbers)
+        public static double Sum(double[] numbers)
         {
-            throw new NotImplementedException();
+            double sum = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                sum += numbers[i];
+            }
+            return sum;
         }
 
         public static double Minimum(double[] numbers)
         {
-            throw new NotImplementedException();
+            double min = numbers[0];
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (min > numbers[i])
+                {
+                    min = numbers[i];
+                }
+            }
+            return min;
         }
 
-        public static int Maximum(double[] numbers)
+        public static double Maximum(double[] numbers)
         {
-            throw new NotImplementedException();
+            double max = numbers[0];
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (max < numbers[i])
+                {
+                    max = numbers[i];
+                }
+            }
+            return max;
         }
 
-        public static object Average(double[] numbers)
+        public static double Average(double[] numbers)
         {
-            throw new NotImplementedException();
+            double sum = 0;
+            double average = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                sum += numbers[i];
+            }
+            average = sum / numbers.Length;
+
+            return average; 
         }
     }
 }
