@@ -7,7 +7,7 @@ namespace CalculatorTest
     [TestClass]
     public class TestVersion1
     {
-        double delta = 0.0000000000001; // Handles double accuracy
+        private double delta = 0.0000000000001; // Handles double accuracy
 
         [TestMethod]
         public void TestAdd()
