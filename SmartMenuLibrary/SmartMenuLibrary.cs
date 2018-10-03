@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartMenuLibrary
 {
-    public class Class1
+    public class SmartMenuLibrary
     {
     }
 }
