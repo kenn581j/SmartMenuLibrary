@@ -1,0 +1,10 @@
+﻿================== Menu ==================
+
+Vælg et af punkterne
+
+1. Gør dette;1
+2. Gør hint;2
+3. Gør noget;3
+4. Få svaret på livet, universet og alting;4
+
+Tryk 0 for at afslutte;0

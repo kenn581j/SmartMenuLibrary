@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-/*
+using SmartMenuLibrary;
+
 namespace SmartMenuTest
 {
     [TestClass]
@@ -9,7 +10,7 @@ namespace SmartMenuTest
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }
-*/
