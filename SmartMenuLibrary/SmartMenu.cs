@@ -28,8 +28,7 @@ namespace SmartMenuLibrary
             file.Close();
         }
 
-
-        private int Choice { get; set; }
+        public int Choice { get; set; }
 
         //Metode der køre vores menu
         public void Activate()
@@ -57,11 +56,9 @@ namespace SmartMenuLibrary
                 catch (FormatException e)
                 {
                     Console.WriteLine(e.Message);
-                }
-                
-                //Call(choice);
+                }                        
 
-            } while (Choice != 0);
+    } while (Choice != 0);
         }
 
 
