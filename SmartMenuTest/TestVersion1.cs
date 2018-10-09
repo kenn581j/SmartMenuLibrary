@@ -10,7 +10,7 @@ namespace SmartMenuTest
         [TestMethod]
         public void TestMethod1()
         {
-            int valg = SmartMenu.Choise;
+            SmartMenu.Choise = 10;
         }
     }
 }
