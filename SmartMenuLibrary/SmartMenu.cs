@@ -28,10 +28,13 @@ namespace SmartMenuLibrary
             file.Close();
         }
 
+
+        private int Choice { get; set; }
+
         //Metode der køre vores menu
         public void Activate()
         {
-            int choice = 0;            
+                       
 
             //Fjerner ;id fra alle liner i vores menu så den er klar til at blive vist til brugeren
             foreach (var item in menuLines)
@@ -49,16 +52,16 @@ namespace SmartMenuLibrary
                 string userInput = Console.ReadLine();
                 try
                 {
-                    choice = Int32.Parse(userInput);
+                    Choice = Int32.Parse(userInput);
                 }
                 catch (FormatException e)
                 {
                     Console.WriteLine(e.Message);
                 }
-
+                
                 //Call(choice);
 
-            } while (choice != 0);
+            } while (Choice != 0);
         }
 
 
