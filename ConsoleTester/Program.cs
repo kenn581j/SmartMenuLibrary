@@ -19,6 +19,7 @@ namespace ConsoleTester
             SmartMenu menu = new SmartMenu();
             menu.LoadMenu("MenuSpec.txt");
             menu.Activate();
+            
         }
     }
 }

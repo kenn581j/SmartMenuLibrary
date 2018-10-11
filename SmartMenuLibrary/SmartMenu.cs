@@ -8,9 +8,30 @@ namespace SmartMenuLibrary
 {
     public class SmartMenu
     {
+        private int inChoise;
+        private bool menuChoiseContinue = false;
+        public int Choise
+        {
+            get
+            {
+                return inChoise;
+            }
+            set
+            {
+                inChoise = value;
+            }
+        }
+        public bool MenuContinue
+        {  
+            set
+            {
+                menuChoiseContinue = value;
+            }
+        }
+
         //List Object som indenholder vores menu
-        List<string> menuLines = new List<string>();     
-        
+        List<string> menuLines = new List<string>();
+
         //Metode der indlæser menu filen til vores list object
         public void LoadMenu(string path)
         {
@@ -26,15 +47,11 @@ namespace SmartMenuLibrary
                 counter++;
             }
             file.Close();
-        }
-
-        
-        public static int Choise { get; set; }
+        }                
 
         //Metode der køre vores menu
         public void Activate()
-        {
-                       
+        {                       
 
             //Fjerner ;id fra alle liner i vores menu så den er klar til at blive vist til brugeren
             foreach (var item in menuLines)
@@ -52,14 +69,20 @@ namespace SmartMenuLibrary
                 string userInput = Console.ReadLine();
                 try
                 {
-                    Choice = Int32.Parse(userInput);
+                    Choise = Int32.Parse(userInput);
                 }
                 catch (FormatException e)
                 {
                     Console.WriteLine(e.Message);
-                }                        
+                }
 
-            } while (Choice != 0);
+                while (menuChoiseContinue == false)
+                {
+                    Console.WriteLine("MenuStop");
+                }
+                menuChoiseContinue = false;
+                
+            } while (Choise != 0);
             
         }
 
